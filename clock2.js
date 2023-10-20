@@ -9,7 +9,7 @@ function updateClock() {
     const statusClosed = document.getElementById('status-closed');
 
     if (
-        (day >= 1 && day <= 5 && hour >= 8 && hour < 16 ) ||
+        (day >= 1 && day <= 5 && hour >= 8 && hour === 14 && minute < 50 ) ||
         (day === 6 && hour >= 8 && (hour < 12 || (hour === 12 && minute < 30)))
     ) {
         clock.style.color = 'green';
