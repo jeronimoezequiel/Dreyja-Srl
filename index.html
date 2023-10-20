@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Box icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="clock.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Navbar - Responsive</title>
+</head>
+<body>
+    
+    <!-- TopBar -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info d-flex align-item-center">
+                <i class="bi bi-telephone">  Horario de atención: Lunes a Viernes de 08:00 a 16.30hs</i>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <nav class="navbar">
+        <a href="#"><img class="logo" src="./img/loo.png" alt=""></a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="./index.html" id="home">Home</a></li>
+                <li><a href="./sections/sf.html" id="steel-framing">Steel Framing</a></li>
+                <li><a href="./sections/cs.html" id="construccion-seco">Construcción en seco</a></li>
+                <li><a href="./sections/tya.html" id="techo-aislacion">Techo y Aislación</a></li>
+                <li><a href="./sections/pvc.html" id="pvc">PVC</a></li>
+                <li><a href="./sections/quienes-somos.html" id="quienes-somos">Quienes Somos</a></li>
+                <li><a href="./sections/contacto.html" id="contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <img src="./img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    
+        <!-- Reloj digital -->
+        <div id="clock-container">
+            <div id="clock"></div>
+            <div class="status" id="status-open">Abierto</div>
+            <div class="status" id="status-closed">Cerrado</div>
+        </div>
+
+    </nav>
+
+    <header></header>
+
+    <main>
+        <section class="section"></section>
+        <hr>
+        <section class="section"></section>
+        <hr>
+        <section class="section"></section>
+        <hr>
+        <section class="section"></section>
+        <hr>
+    </main>
+
+
+    <script src="clock2.js"></script>
+    <script src="./js/menu-hamburguesa.js"></script>
+</body>
+</html>
