@@ -37,6 +37,24 @@ a{
     list-style: none;
     text-decoration: none;
 }
+.full-width{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.ShowBox{
+	opacity: 1 !important;
+	pointer-events: auto !important;
+}
+.formated-section{
+	padding: 60px 0;
+}
+.h2-title{
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+}
 
 /*--------------------------------------------------------------------------------------
                                     # TopBar
@@ -277,6 +295,67 @@ header{
     }
 }
 
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 1 - Construimos Futuro
+----------------------------------------------------------------------------------------*/
+.section-1{
+    font-family: 'Poppins';
+    background: rgb(255, 255, 255);
+    height: 50vh;
+    padding: 1vh 0;
+}
+.home-intro{
+    /* padding: 5vh 0; */
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.home-about{
+    padding: 4em 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.columns{
+    display: flex;
+}
+.col + .col {
+    margin-left: 1.5em;
+}
+.fade-in{
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+.fade-in.appear {
+    opacity: 1;
+}
+.more-stuff-grid{
+    background: #f4f4f4;
+    padding: 4em 0;
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+        1em,
+        1fr
+    );
+}
+.from-left{
+    grid-column: 2 / 3;
+    transform: translateX(-50%);
+}
+.from-right{
+    grid-column: 3 / 4;
+    transform: translateX(50%);
+}
+.from-left, .from-right {
+    transition: transform 400ms ease-in;
+}
+.from-left.appear, .from-right.appear {
+    transform: translateX(0);
+}
+
+
+
+
 /* Carousel section 4 */
 .slider{
     width: 1300px;
@@ -345,16 +424,44 @@ header{
     width: 30px;
 }
 @media screen and (max-width: 768px){
-    .slider{
-        height: 400px;
-    }
-}
-
-
-@media screen and (max-width: 900px) {
     #topbar{
         display: none;
     }
+    .clock-container{
+        display: none;
+    }
+    .section-1{
+        background: rgb(247, 247, 247);
+        height: 48vh;
+        border: 10px;
+    }
+    .home-about{
+        margin-top: 1%;
+        padding: 1vh 0;
+    }
+    .section-1 .home-about .columns h2{
+        font-family: 'Poppins';
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-1 .home-about .columns p{
+        font-family: 'Poppins';
+        font-weight: 300;
+        color: #4b4b4b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slider{
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    
     .navbar{
         padding: 0;
         background: none;
@@ -397,14 +504,212 @@ header{
         font-size: 1.2em;
     }
     #clock-container {
-        display: block;
-        text-align: center;
-        width: 100%; /* Establecer un ancho fijo del 100% para el reloj en la versión móvil */
+        display: none;
     }
+}
 
-    /* .section-carousel{
 
-    } */
+/*--------------------------------------------------------------------------------------
+                                    # Formulario
+----------------------------------------------------------------------------------------*/
+.section-form{
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    display: grid;
+    place-items: center;
+    background: #1766a3;
+    background: linear-gradient(to top right, #1867a3, #0c426c);
+}
+#dreyja-email{
+    opacity: 0;
+}
+.section-form .contactForm{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    width: 90%;
+    height: 90%;
+    background: #9cdafa;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+.section-form .contactForm .form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 30px;
+}
+.section-form .contactForm .form form{
+    width: 100%;
+}
+/* Título y descripcion */
+.section-form .contactForm .form .texto h2{
+    font-family: 'Poppins';
+    color: #1766a3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.section-form .contactForm .form .texto p{
+    font-family: 'Poppins';    
+    color: #0b426c;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+/* Cajas de texto */
+.section-form .contactForm .form form .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+/* Etiquetas e inputs */
+.section-form .contactForm .form form .inputBox label{
+    color: #1766a3;
+    font-weight: 700;
+}
+.section-form .contactForm .form form .inputBox input[type="text"],
+.section-form .contactForm .form form .inputBox input[type="email"],
+.section-form .contactForm .form form .inputBox textarea{
+    border: none;
+    background: #cbebfb;
+    padding: 10px;
+    border-radius: 10px;
+    color: #1766a3;
+    resize: none;
+}
+.section-form .contactForm .form form .inputBox input[type="text"]:focus,
+.section-form .contactForm .form form .inputBox input[type="email"]:focus,
+.section-form .contactForm .form form .inputBox textarea:focus {
+    outline: 2px solid #1766a3;
+}
+.section-form .contactForm .form form input[type="submit"] {
+    background: #1766a3;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+    transition: 0.3s;
+}
+.section-form .contactForm .form form input[type="submit"]:hover{
+    background: #0b426c;
+}
+/* Contenedor Información */
+.section-form .contactForm .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Imagen */
+.section-form .contactForm .info .imgBox {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+.section-form .contactForm .info .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Información de Contacto */
+.section-form .contactForm .info .textBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.section-form .contactForm .info .textBox .infoContact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.section-form .contactForm .info .textBox .infoContact ion-icon{
+    font-size: 2em;
+    margin-right: 10px;
+    color: #0b426c;
+}
+.section-form .contactForm .info .textBox .infoContact p {
+    color: #0b426c;
+}
+/* Redes Sociales */
+.section-form .contactForm .info .rrss a{
+    padding: 20px;
+    font-size: 2em;
+    color: #1766a3;
+    transition: 0.3s;
+}
+.section-form .contactForm .info .rrss a:hover {
+    color: #0b426c;
+}
+/* Breakpoints */
+/* Pantallas Largas */
+@media only screen and (max-width: 1200px) {
+    .section-form .contactForm {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Laptops y Tablets */
+@media only screen and (max-width: 768px){
+    .section-form{
+        height: 155vh;
+        background: #1766a3;
+        background: linear-gradient(to top right, #1867a3, #0c426c);
+    }
+    .section-form .contactForm {
+        margin-left: -20px;
+    }
+    .section-form .contactForm .info{
+        height: 300px;
+        padding: 30px;
+    }
+    .section-form .contactForm .info .imgBox {
+        display: none;
+    }
+    .contact-info{
+        display: none;
+    }
+    .carro-de-compras{
+        display: none;
+    }
+}
+
+/* Celular */
+@media only screen and (max-width: 600px) {
+    .section-form {
+        height: 165vh;
+    }
+    .section-form .contactForm {
+        margin-left: -20px;
+    }
+    .section-form .contactForm .form {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .section-form .contactForm .info{
+        margin-bottom: 30px;
+    }
+    .carro-de-compras{
+        display: none;
+    }
+    .contact-info{
+        display: none;
+    }
 }
 
 

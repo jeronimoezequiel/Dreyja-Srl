@@ -14,6 +14,10 @@
     <!-- Box icons -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+    <!-- Ion Icons -->
+    
+    
+
     <!--Icon-Font-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     
@@ -132,10 +136,30 @@
     --------------------------------------------------------------------------------------->
     <main>
         <!-- # sección 1 -->
-        <section class="section">
-            <h1>seccion 1</h1>
+        <section class="section-1 home-intro">
+                <!-- <h2>DreyjaSRL</h2>
+                <h3>Construir futuro</h3> -->
+            
+            
+            <div class="home-about">
+                <div class="columns">
+                    <div class="col fade-in">
+                        <h2>Construir futuro</h2>
+                        <p>Somos una empresa joven, concebida con la idea de ofrecerte el asesoramiento y la atencion necesarias, para que puedas desarrollar tus proyectos constructivos con productos de primera calidad, con diferentes opciones, a la medida de tus posibilidades. Contamos con un equipo de expertos que te acompañará en cada paso de tu construcción. Queremos que vengas, nos cuentes cuáles son tus proyectos, y nos permitas ayudarte a hacerlos realidad, sin necesidad de gastar demás</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="home-more-stuff">
+                <div class="more-stuff-grid">
+                    <img class="slide-in from-left" src="./img/Construir futurooo.jpg" alt="">
+                </div>
+            </div> -->
+        
+
+
         </section>
-        <hr>
+        
         <!-- # sección 2 -->
         <section class="section"></section>
         <hr>
@@ -182,6 +206,61 @@
 
         </section>
         <hr>
+
+        <!-- # Formulario -->
+        <section class="section-form">
+            <div class="contactForm">
+                <div class="form">
+                    <div class="texto">
+                        <h2>¡Hacenos tu consulta!</h2>
+                        <p>Dejanos tu inquietud para brindarte más información!</p>
+                    </div>
+
+                    <form id="form" action="" class="form-form">
+                        <div class="inputBox">
+                            <label for="name">Nombre</label>
+                            <input name="name" id="name" type="text" placeholder="Nombre..." required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="email">email</label>
+                            <input name="email" id="email" type="text" placeholder="Email..." required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="message">Ingrese su mensaje</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Tu mensaje..."></textarea>
+                        </div>
+                        <input class="btn primary full" type="submit" value="Enviar mensaje">
+                    </form>
+                </div>
+
+                <div class="info">
+
+                    <div class="imgBox">
+                        <img src="./img/email.png" alt="">
+                    </div>
+                    
+                    <div class="textBox">
+                        <div class="infoContact">
+                            <ion-icon class="ion-icon" name="map"></ion-icon> <p>Calle 524 #4453 - cp:1900, LA PLATA, Buenos Aires. </p>
+                        </div>
+                        
+                        <div class="infoContact">
+                            <ion-icon class="ion-icon" name="call"></ion-icon> <p>+549 221 436 7824 </p>
+                        </div>
+                        <div class="infoContact">
+                            <ion-icon class="ion-icon" name="mail-open"></ion-icon> <p>dreyjasrl@gmail.com </p>
+                        </div>
+                    </div>
+                    
+                    <div class="rrss">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="mailto:dreyjasrl@gmail.com" id="dreyja-email">dreyja</a>
+
     </main>
 
     <!-------------------------------------------------------------------------------------- 
@@ -261,8 +340,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="clock2.js"></script>
+    <script src="./js/formulario.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/menu-hamburguesa.js"></script>
     <script src="./js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
