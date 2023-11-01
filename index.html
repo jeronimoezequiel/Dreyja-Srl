@@ -36,31 +36,29 @@
     --------------------------------------------------------------------------------------->
     <div id="topbar" class="d-flex align-items-center fixed-top">
         <div class="container d-flex justify-content-between">
-            
             <div class="contact-info d-flex align-item-center">
                 <i class="bi bi-telephone">  Horario de atención: Lunes a Viernes de 08:00 a 16.30hs</i>
             </div>
-
         </div>
-
-        
-
     </div>
 
     <!-------------------------------------------------------------------------------------- 
                                     # Navbar
     --------------------------------------------------------------------------------------->
     <nav class="navbar">
-        <a href="./index.html"><img class="logo" src="./img/loo.png" alt=""></a>
+        <div class="nav-logo">
+            <a href="./index.html"><img class="logo" src="./img/loo.png" alt=""></a>
+        </div>
+        
         <div class="nav-links">
             <ul class="tabs">
-                <li><a href="./index.html" id="home">Home</a></li>
-                <li><a href="./sections/sf.html" id="steel-framing">Steel Framing</a></li>
-                <li><a href="./sections/cs.html" id="construccion-seco">Construcción en seco</a></li>
-                <li><a href="./sections/tya.html" id="techo-aislacion">Techo y Aislación</a></li>
-                <li><a href="./sections/pvc.html" id="pvc">Revestimiento de PVC</a></li>
-                <li><a href="./sections/quienes-somos.html" id="quienes-somos">Quienes Somos</a></li>
-                <li><a href="./sections/contacto.html" id="contacto">Contacto</a></li>
+                <li><a href="./index.html" class="underline-hover">Home</a></li>
+                <li><a href="./sections/sf.html" class="underline-hover">Steel Framing</a></li>
+                <li><a href="./sections/cs.html" class="underline-hover">Construcción en seco</a></li>
+                <li><a href="./sections/tya.html" class="underline-hover">Techo y Aislación</a></li>
+                <li><a href="./sections/pvc.html" class="underline-hover">Revestimiento de PVC</a></li>
+                <li><a href="./sections/quienes-somos.html" class="underline-hover">Quienes Somos</a></li>
+                <li><a href="./sections/contacto.html" class="underline-hover">Contacto</a></li>
             </ul>
         </div>
         
@@ -72,11 +70,12 @@
             <div class="status" id="status-open">Abierto</div>
             <div class="status" id="status-closed">Cerrado</div>
         </div>
-
+        <!-- Carro de Compras -->
         <div class="carro-de-compras">
             <a href="https://www.youtube.com/watch?v=ObeBVgqfs6c" target="_blank"><img class="carro" src="img/cart_2420157.png"/></a>
         </div>
 
+        <div class="yellow-line"></div>
     </nav>
 
     <!-------------------------------------------------------------------------------------- 
@@ -95,40 +94,6 @@
                 <a href="#about" class="btn-get-started scrollto">Ver Más...</a>
             </div>
             </section><!-- End Home -->
-
-        <!-- <section class="section">            
-            <div class="slider header-section">
-                <div class="list">
-                    <div class="item">
-                        <img class="item-img" src="./img/steel framing obra.jpeg" alt="obra de steel framing en construccion">
-                    </div>
-                    <div class="item">
-                        <img src="./img/Soluciones constructivas.PNG" alt="Imagen de fondo">
-                    </div>
-                    <div class="item">
-                        <img src="./img/Construir futuri.PNG" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./img/img1.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./img/img2.webp" alt="">
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button id="prev"><</button>
-                    <button id="next">></button>
-                </div>
-                <ul class="dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </section> -->
-
     </header>
 
     <!-------------------------------------------------------------------------------------- 
@@ -137,9 +102,6 @@
     <main>
         <!-- # sección 1 -->
         <section class="section-1 home-intro">
-                <!-- <h2>DreyjaSRL</h2>
-                <h3>Construir futuro</h3> -->
-            
             
             <div class="home-about">
                 <div class="columns">
@@ -161,33 +123,185 @@
         </section>
         
         <!-- # sección 2 -->
-        <section class="section"></section>
-        <hr>
-        <!-- # sección 3 -->
-        <section class="section"></section>
-        <hr>
-        <!-- # sección 4 -->
-        <section class="section">
+        <section class="section section-2">
+            
+            <div class="grid-gallery">
+                <div class="grid-item">
+                    <a href="../header -responsive/img/img-1.jpg">
+                        <img class="grid-gallery-img" src="../header -responsive/img/Logistica.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="../header -responsive/img/img-2.jpg">
+                        <div class="grid-content">
+                            <i class="bi bi-person-fill-gear icon"></i>
+                        <h4>
+                            Logistica 
+                            <br>
+                            <br>
+                        </h4>
+                        <p>Pensamos en los medios para facilitar tu construcción</p>
+                        </div>
+                    </a>
+                </div>
 
-            <section class="section-4">
+                <div class="grid-item">
+                    <a href="../header -responsive/img/img-3.jpg">
+                        <div class="grid-content">
+                            <i class="bi bi-cart-check icon"></i>
+                        <h4>
+                            Venta de materiales para tu construcción en seco 
+                            <br>
+                            <br>
+                        </h4>
+                        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="../header -responsive/img/img-4.jpg">
+                        <img class="grid-gallery-img" src="../header -responsive/img/drywall.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="../header -responsive/img/img-5.jpg">
+                        <div class="grid-content">
+                            <i class="bi bi-person-fill-check"></i>
+                        <h4>
+                            Asesoramiento Profesional 
+                            <br>
+                            <br>
+                        </h4>
+                        <p>Te asesoramos en la elección de tus materiales</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="grid-item">
+                    <a href="../header -responsive/img/img-6.jpg">
+                        <div class="grid-content">
+                            <i class="bi bi-people-fill icon"></i>
+                        <h4>
+                            Acompañamiento  
+                            <br>
+                            <br>
+                        </h4>
+                        <p>Estamos siempre cerca tuyo para seguir el desarrollo de tu proyecto y asegurarnos de que todo salga bien</p>
+                        </div>
+                    </a>
+                </div>
+                
+                
+            </div>
+            
+
+        </section>
+
+        <!-- <hr> -->
+
+        <!-- # carousel de proveedores -->
+        <section class="carousel-proveedores">
+            <div class="slider-prov">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img class="carousel-prov-img" src="../header -responsive/img/isover-vector-logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="carousel-prov-img" src="../header -responsive/img/Placo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="carousel-prov-img" src="../header -responsive/img/logo3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="carousel-prov-img" src="../header -responsive/img/logo4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="carousel-prov-img" src="../header -responsive/img/logo5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="carousel-prov-img" src="../header -responsive/img/logo6.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="carousel-prov-img" src="../header -responsive/img/logo7.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- # sección 3 -->
+        <section class="section section-3">
+
+            <h2 class="subtitle-center">¿Por qué comprar en Dreyja?</h2>
+
+                    <!-- ======= Seccion Servicios ======= -->
+            <section id="services" class="services">
+                <div class="container">
+        
+                <div class="section-title">
+                    <p>Nuestras ventajas competitivas están para brindarte la mejor experiencia de compra, la más completa y la más rentable</p>
+                </div>
+        
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 d-flex align-items-stretch">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-calculator"></i></div>
+                        <h4><a href="">Ahorrá hasta un 25%</a></h4>
+                        <p>Economizá en tu compra asesorándote con nuestro equipo de profesionales que harán el cálculo que necesitas para no comprar de más</p>
+                    </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-5 d-flex align-items-stretch mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-award"></i></div>
+                        <h4><a href="">Lideres en el mercado</a></h4>
+                        <p>Acompañando a marcas lideres en venta de materiales para la construcción en seco, servicios y asesoramiento de Steel Framing.</p>
+                    </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-5 d-flex align-items-stretch mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-people-fill"></i></div>
+                        <h4><a href="">Acompañamiento</a></h4>
+                        <p>Estamos siempre cerca tuyo para seguir el desarrollo de tu proyecto y asegurarnos de que todo salga bien</p>
+                    </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-5 d-flex align-items-stretch mt-4 mt-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-truck"></i></div>
+                            <h4><a href="">Envíos a todo el país</a></h4>
+                            <p>Te llevamos los productos hasta tu obra. Hacemos envíos a todo el país y nos aseguramos de que tus materiales lleguen correctamente.</p>
+                        </div>
+                        </div>
+        
+                    
+                </div>
+            </section><!-- Fin de Sección Servicios -->
+
+        </section>
+        <!-- # sección 4 -->
+        <section class="section section-4">
                 <h2 class="title-s4">Acompañamos el desarrollo de tus obras</h2>
                 <p class="subtitle-s4">Sabemos que cada proyecto es único y cada cliente tiene necesidades específicas.  Por eso en Mundo Seco nos importa escucharte y acompañarte en cada decisión que tengas que tomar para que tu compra sea realmente eficiente y siempre puedas concretar tu proyecto de la mejor manera.</p>
                 <div class="slider">
                     <div class="list">
                         <div class="item">
-                            <img class="item-img" src="assets/images/steel framing obra.jpeg" alt="">
+                            <img class="item-img" src="../header -responsive/img/steel framing obra.jpeg" alt="">
                         </div>
                         <div class="item">
-                            <img src="assets/images/steel-framing2.jpg" alt="">
+                            <img src="../header -responsive/img/steelframing-02.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="assets/images/steel-framing3.jpg" alt="">
+                            <img src="../header -responsive/img/steelframing-01.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="assets/images/steel-framing4.jpg" alt="">
+                            <img src="../header -responsive/img/steelframing-03.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="assets/images/steel-framing5.jpg" alt="">
+                            <img src="../header -responsive/img/steelframing-04.jpg" alt="">
                         </div>
                     </div>
                     <div class="buttons">
@@ -202,8 +316,6 @@
                         <li></li>
                     </ul>
                 </div>
-            </section>
-
         </section>
         <hr>
 
@@ -343,6 +455,10 @@
     <script src="./js/formulario.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/menu-hamburguesa.js"></script>
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="lightbox2/dist/js/lightbox.min.js"></script>
     <script src="./js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

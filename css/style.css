@@ -60,8 +60,8 @@ a{
                                     # TopBar
 ----------------------------------------------------------------------------------------*/
 #topbar{
-    background-color: #444444;
-    height: 30px;
+    background-color: #ffffff;
+    height: 25px;
     font-size: 13px;
     transition: all 0.5s;
     z-index: 996;
@@ -76,7 +76,7 @@ a{
     font-family: 'Poppins';
     color: rgb(177, 177, 177);
     /* padding-right: 20px; */
-    margin-left: -60px;
+    margin-left: -90px;
     line-height: 0;
     margin-top: 1.2%;
 }
@@ -88,7 +88,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -9%;
+    margin-top: 0%;
     /* margin-left: -20%; */
     width: 200px;
 }
@@ -146,36 +146,30 @@ header{
 .navbar{
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(114deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 50%, rgba(255,255,255,1) 100%);
-    
-    /* propiedades originales */
-    border-radius: 100px;
-    height: 3.4rem;
+    background: #fff;
+    height: 4.5rem;
     transition: all 0.5s;
     z-index: 997;
     padding: 5px 0;
-    top: 50px;
+    top: 25px;
 }
 .navbar a{
     color: rgb(0, 0, 0);
 }
-.navbar .logo{
+.navbar .nav-logo .logo{
     width: 8.8rem;
     height: 2.5rem;
     margin-right: 80px;
-    margin-top: -1.8%;
+    margin-top: -3.5%;
 }
 .navbar .carro-de-compras{
     margin-top: -0.5%;
     margin-right: -1%;
-    /* background: #dfdfdf;
-    color: white; */
     width: 3.1rem;
     height: 2.8rem;
     text-align: center;
@@ -201,17 +195,34 @@ header{
     display: flex;
 }
 .navbar .nav-links ul li{
-    /* margin: 1.5% 20px 0px 20px; */
     margin-top: 1.7%;
     margin-left: 0px;
     margin-right: 15px;
     gap: 1.5rem;
 }
-.active{
-    background : #be0f0f;
-    border-radius: 50px;
-    padding: 10px;
+
+.navbar .nav-links ul li a {
+    position: relative;
+    text-decoration: none; /* Elimina el subrayado predeterminado del texto */
 }
+.navbar .nav-links ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Grosor del subrayado */
+    background-color: #e90303; /* Color del subrayado */
+    bottom: -32.5px;
+    transform: scaleX(0); /* Inicialmente sin ancho */
+    transform-origin: center;
+    transition: transform 0.3s;
+    z-index: 557;
+}
+.navbar .nav-links ul li a:hover::before {
+    transform: scaleX(1); /* Añade ancho al subrayado en hover */
+}
+
+
 .navbar .menu-hamburger{
     display: none;
     position: absolute;
@@ -219,14 +230,23 @@ header{
     right: 50px;
     width: 25px;
 }
+.yellow-line {
+    height: 6px;
+    background-color: #4b4b4b;
+    width: 100%;
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    z-index: 555;
+}
 
 /*--------------------------------------------------------------------------------------
-                                    # Seccion Carousel Header
+                                    # Seccion Principal Header
 ----------------------------------------------------------------------------------------*/
 #home {
     width: 100%;
     height: 110vh;
-    background: linear-gradient(rgba(5, 7, 12, 0.521),rgba(5, 7, 12, 0.521)),
+    background: linear-gradient(to right, rgba(5, 7, 12, 0.719),rgba(5, 7, 12, 0) ),
     url("../img/steel\ framing\ obra.jpeg") top center;
     background-size: cover;
     background-position: center;
@@ -239,7 +259,7 @@ header{
     margin: 0;
     font-family: "Poppins";
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 56px;
     text-transform: uppercase;
     color: white;
@@ -508,6 +528,313 @@ header{
     }
 }
 
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 2 - Grid gallery
+----------------------------------------------------------------------------------------*/
+.section-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(201, 201, 201, 0.63) 50%, rgba(255, 255, 255, 1) 100%);
+    flex-wrap: wrap;
+}
+.grid-gallery{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+.grid-gallery .grid-item{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+.grid-gallery .grid-item:hover{
+    background: #979797;
+    transition: 0.5s;
+}
+.grid-gallery .grid-item .grid-content:hover{
+    color: #fff;
+}
+.grid-gallery .grid-item i{
+    font-size: 2.5rem;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.grid-gallery .grid-item h4{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0px 10px 0 20px;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+.grid-gallery .grid-item p{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: .9rem;
+    margin: -15px 10px 0 10px;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+.grid-gallery .grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.grid-gallery .grid-item:hover img {
+    transform: scale(1.1);
+}
+.grid-gallery .grid-item a {
+    cursor: pointer;
+}
+.grid-gallery .grid-item:nth-child(3n -2) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+@media (max-width: 768px) {
+    .grid-gallery{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 250px;
+    }
+    .grid-gallery .grid-item:nth-child(3n -2) {
+        grid-column: unset;
+        grid-row: unset;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 3 - Por qué comprar en Dreyja
+----------------------------------------------------------------------------------------*/
+.section-3{
+    height: 100vh;
+    background-color: white;
+}
+.subtitle-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    margin-top: 5%;
+}
+.section-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Servicios */
+.services .icon-box {
+    text-align: center;
+    border: 1px solid #d5e1ed;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+}
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #1977cc;
+    border-radius: 5px;
+    transition: all .3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform-style: preserve-3d;
+}
+.services .icon-box .icon i {
+    color: #fff;
+    font-size: 28px;
+}
+.services .icon-box .icon::before {
+    position: absolute;
+    content: '';
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    background: #badaf7;
+    border-radius: 5px;
+    transition: all .3s ease-out 0s;
+    transform: translateZ(-1px);
+}
+.services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.services .icon-box h4 a {
+    color: #2c4964;
+}
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.services .icon-box:hover {
+    background: #3fbbc0;
+    border-color: #3fbbc0;
+}
+.services .icon-box:hover .icon {
+    background: #fff;
+}
+.services .icon-box:hover .icon i {
+    color: #1977cc;
+}
+.services .icon-box:hover .icon::before {
+    background: #3291e6;
+}
+.services .icon-box:hover h4 a, .services .icon-box:hover p {
+    color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-3 {
+        font-size: 1.8rem; /* Reducir el tamaño del título en pantallas medianas */
+        padding: 20px; /* Ajustar el relleno en pantallas medianas */
+    }
+}
+@media (max-width: 968px){
+    .section-3 {
+        height: auto; /* Cambiar la altura a automática en pantallas pequeñas */
+        font-size: 1.5rem; /* Reducir el tamaño del título en pantallas pequeñas */
+        padding: 10px; /* Ajustar el relleno en pantallas pequeñas */
+    }
+    .section-title{
+        margin-left: 60px;
+    }
+    .row{
+        padding: 10px 10px 10px 100px;
+    }
+}
+@media (max-width: 768px) {
+    .section-3 {
+        height: auto; /* Cambiar la altura a automática en pantallas pequeñas */
+        font-size: 1.5rem; /* Reducir el tamaño del título en pantallas pequeñas */
+        padding: 10px; /* Ajustar el relleno en pantallas pequeñas */
+    }
+    .section-title{
+        margin-left: 30px;
+    }
+    .row{
+        padding: 10px 10px 10px 50px;
+        margin-right: 15px;
+    }
+}
+
+
+
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 4 - Carousel
+----------------------------------------------------------------------------------------*/
+.section-4{
+    height: 90vh;
+    margin-top: -2%;
+    background: #fff;
+}
+.title-s4{
+    color: rgb(255, 255, 255);
+    background-color: rgba(145, 16, 16, 0.329);
+    height: 6rem;
+    width: 43rem;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    margin-top: 8rem;
+    margin-left: 5rem;
+    padding: 1.8rem;
+    font-size: 2.3rem;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    z-index: 992;
+}
+.subtitle-s4{
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(3px);
+    height: 5.5rem;
+    width: 43rem;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    margin-top: 15rem;
+    margin-left: 5rem;
+    padding: 3.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    z-index: 992;
+}
+.carousel-proveedores{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background: #ffffff;
+}
+.carousel-prov-img{
+    width: 250px;
+    height: 100px;
+}
+.slider-prov{
+    position: relative;
+    height: 100px;
+    width: 1350px;
+    background: #fff;
+    margin: auto;
+    overflow: hidden;
+}
+.slider-prov::before, 
+.slider-prov::after {
+    position: absolute;
+    /* background: linear-gradient(to right, #141414 0%, rgba(255,255,255,0) 100%); */
+    content: "";
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider-prov::before {
+    left: 0;
+    top: 0;
+}
+.slider-prov .slide-track{
+    display: flex;
+    width: calc(250px * 14);
+    animation: scroll 22s linear infinite;
+}
+.slider-prov .slide{
+    height: 100px;
+    width: 250px;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
 
 /*--------------------------------------------------------------------------------------
                                     # Formulario
@@ -519,7 +846,7 @@ header{
     display: grid;
     place-items: center;
     background: #1766a3;
-    background: linear-gradient(to top right, #1867a3, #0c426c);
+    background: linear-gradient(to top right, #3E92CC, #0c426c);
 }
 #dreyja-email{
     opacity: 0;
@@ -684,9 +1011,6 @@ header{
     .contact-info{
         display: none;
     }
-    .carro-de-compras{
-        display: none;
-    }
 }
 
 /* Celular */
@@ -705,9 +1029,6 @@ header{
         margin-bottom: 30px;
     }
     .carro-de-compras{
-        display: none;
-    }
-    .contact-info{
         display: none;
     }
 }
