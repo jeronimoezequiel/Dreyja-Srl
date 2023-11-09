@@ -62,7 +62,7 @@ a{
 #topbar{
     background-color: #ffffff;
     height: 25px;
-    font-size: 13px;
+    font-size: 12px;
     transition: all 0.5s;
     z-index: 996;
 }
@@ -75,7 +75,7 @@ a{
 #topbar .contact-info i{
     font-family: 'Poppins';
     color: rgb(88, 88, 88);
-    margin-left: -50px;
+    margin-left: 0px;
     margin-top: 1.2%;
 }
 
@@ -86,13 +86,14 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -.5%;
+    margin-top: -4.3%;
+    margin-left: 75%;
     width: 200px;
 }
 #clock {
     font-family: 'lato';
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 .status {
@@ -142,7 +143,7 @@ header{
 ----------------------------------------------------------------------------------------*/
 .navbar{
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -159,16 +160,15 @@ header{
     color: rgb(0, 0, 0);
 }
 .navbar .nav-logo .logo{
-    width: 12rem;
-    height: 3.5rem;
-    margin-right: 220px;
+    width: 8.5rem;
+    height: 2.4rem;
+    margin-left: -60%;
     margin-top: -3.5%;
 }
 .navbar .carro-de-compras{
-    margin-top: -1%;
-    margin-right: -1%;
-    width: 3.1rem;
-    height: 3.1rem;
+    margin-top: -4.5%;
+    width: 2.3rem;
+    height: 2.3rem;
     text-align: center;
     border-radius: 50%;
     padding: 3px;
@@ -179,22 +179,24 @@ header{
     border-radius: 50%;
     padding: 3px;
     text-align: center;
-    background-color: #f1f1f1;
-    border: 1px solid #12e00b;
+    background-color: #f0f0f0;
+    border: 2px solid #000000;
     cursor: pointer;
 }
 .navbar .carro-de-compras .carro{
-    margin-top: 6px;
-    width: 2rem;
-    height: 2rem;
+    margin-top: 3px;
+    width: 1.6rem;
+    height: 1.6rem;
     text-align: center;
 }
 .navbar .nav-links ul{
     display: flex;
-    margin-left: -180px;
+}
+.nav-links .tabs{
+    margin-left: -7%;
 }
 .navbar .nav-links ul li{
-    margin-top: 1.7%;
+    margin-top: 2.7%;
     margin-left: 0px;
     margin-right: 15px;
     gap: 1rem;
@@ -210,7 +212,7 @@ header{
     width: 100%;
     height: 5px; 
     background-color: #e90303; 
-    bottom: -30.4px;
+    bottom: -28px;
     transform: scaleX(0); 
     transform-origin: center;
     transition: transform 0.3s;
@@ -219,7 +221,6 @@ header{
 .navbar .nav-links ul li a:hover::before {
     transform: scaleX(1); 
 }
-
 .navbar .menu-hamburger{
     display: none;
     position: absolute;
@@ -228,7 +229,7 @@ header{
     width: 25px;
 }
 .yellow-line {
-    height: 5.2px;
+    height: 5.3px;
     background-color: #4b4b4b;
     width: 100%;
     position: fixed;
@@ -236,7 +237,15 @@ header{
     left: 0;
     z-index: 555;
 }
-
+.blue-line{
+    height: 5.3px;
+    background-color: #8baac0;
+    width: 100%;
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    z-index: 555;
+}
 
 /*/* ------------------------------------ INDEX
 /*--------------------------------------------------------------------------------------
@@ -1045,8 +1054,9 @@ header{
     position: relative;
     transform: perspective(400px) rotateY(30deg); /* Ángulo de inclinación */
     transform-origin: 100% 50%;
-    margin-left: 20%;
+    margin-left: 19%;
     margin-top: 29%;
+    /* box-shadow: -.2em 0 0.4em rgba(0, 0, 0, 0.3); */
 }
 .home-steelfr-content p {
     font-family: 'Poppins';
@@ -1069,15 +1079,7 @@ header{
 #home-steelfr .home-steelfr-container {
     position: relative;
 }
-#home-steelfr h1 {
-    margin: 110px;
-    margin-top: 30rem;
-    font-family: "Poppins";
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 56px;
-    color: rgb(46, 46, 46);
-}
+
 
 @media (min-width: 1024px) {
     #home-steelfr {
@@ -1134,10 +1136,10 @@ header{
 /*---------- Img detalle Steel Frame 
 -------------------------------------*/
 .section-1-sf .home-steelfr-section-1{
-    height: 90vh;
+    height: 97vh;
     margin-top: 8%;
     margin-left: 32%;
-    background-image: url(../img/steelframing-detail.png);
+    background-image: url(../img/steelframing-detail-para-hover.png);
     background-repeat: no-repeat;
 }
 .section-1-sf .home-steelfr-section-1 .steelfr-partes ul{
@@ -1151,58 +1153,379 @@ header{
 .steelfr-partes ul li:nth-child(1) a {
     color: #000000;
     position: absolute;
-    margin-top: 21%;
-    margin-left: -1.3%;
+    margin-top: 23.2%;
+    margin-left: -1.8%;
+}
+.steelfr-partes ul li:nth-child(1) a:hover{
+    color: red;
 }
 .steelfr-partes ul li:nth-child(2) a {
     color: #000000;
     position: absolute;
-    margin-top: 21.5%;
-    margin-left: 35.1%;
+    margin-top: 23.5%;
+    margin-left: 38.5%;
 }
 .steelfr-partes ul li:nth-child(3) a {
     color: #000000;
     position: absolute;
-    margin-top: 14.1%;
-    margin-left: 35.1%;
+    margin-top: 15.4%;
+    margin-left: 38.5%;
 }
 .steelfr-partes ul li:nth-child(4) a {
     color: #000000;
     position: absolute;
-    margin-top: 11.2%;
-    margin-left: 35%;
+    margin-top: 12%;
+    margin-left: 38.4%;
 }
 .steelfr-partes ul li:nth-child(5) a {
     color: #000000;
     position: absolute;
-    margin-top: 16.4%;
-    margin-left: -1.5%;
+    margin-top: 17.8%;
+    margin-left: -2.1%;
 }
 .steelfr-partes ul li:nth-child(6) a {
     color: #000000;
     position: absolute;
-    margin-top: 11.2%;
-    margin-left: -1.6%;
+    margin-top: 12.1%;
+    margin-left: -2.1%;
 }
 .steelfr-partes ul li:nth-child(7) a {
     color: #000000;
     position: absolute;
-    margin-top: 6.5%;
-    margin-left: -1.5%;
+    margin-top: 6.9%;
+    margin-left: -2%;
 }
 .steelfr-partes ul li:nth-child(8) a {
     color:  #000000;
     position: absolute;
-    margin-top: -.2%;
-    margin-left: 11.7%;
+    margin-top: -.53%;
+    margin-left: 12.6%;
 }
+
+
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 2 - Detalle Constructivo
+----------------------------------------------------------------------------------------*/
+.section-2-sf{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 95%);
+    overflow: hidden;
+    height: 300vh;
+}
+.container-partes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.titulo {
+    position: relative;
+    margin-left: 21%;
+    margin-top: -12.2%;
+    width: 100%;
+}
+.titulo-fade-der{
+    position: relative;
+    margin-left: 21%;
+    margin-top: -10%;
+    width: 100%;
+}
+.parrafo{
+    position: relative;
+    margin-left: 21%;
+    margin-top: 0%;
+    width: 60%;              
+}
+.div{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #1cd8d2, #93edc7);
+    color: white;
+    margin: 15px 0;
+    border-radius: 7px;
+}
+.izquierda {
+    margin: 6% 0 0 5%; /* Margen derecho del 5% para separar de la derecha */
+    float: left;     /* Hace que los elementos se posicionen a la izquierda */
+}
+.derecha {
+    margin: 2% 0 0 81%; /* Margen izquierdo del 5% para separar de la izquierda */
+    float: right;     /* Hace que los elementos se posicionen a la derecha */
+}
+.btn-content{
+    font-family: 'Poppins';
+    background-color: black;
+    width: 100px;
+    display: flex;
+    position: relative;
+    margin-left: 21%;
+    margin-top: 0%;
+    padding: 7px ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.btn-content:hover {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    background-color: white;
+    border: 1px solid #000;
+}
+.btn-content-shop{
+    font-family: 'Poppins';
+    background: #8baac0;
+    width: 150px;
+    display: flex;
+    position: relative;
+    margin-left: 29%;
+    margin-top: -2.6%;
+    padding: 7px ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.btn-content-shop a {
+    text-decoration: none;
+    color: #000;
+}
+.btn-content-shop:hover {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    background-color: white;
+    border: 2px solid #8baac0;
+}
+
+
+
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 3 - Boton de Steel Framing
+----------------------------------------------------------------------------------------*/
+.section-3-sf{
+    background-color: #8baac0;
+    height: 45vh;
+    width: 100%;
+}
+.section-3-sf h1{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 2rem;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+
+}
+.section-3-sf .btn-e-shop{
+    display: flex;
+    position: absolute;
+    background: #5c7383; 
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 0px 10px 35px;
+    width: 200px;
+    margin-top: 5%;
+    margin-left: 41%;
+}
+.section-3-sf .btn-e-shop a{
+    text-decoration: none;
+    color: #fff;
+}
+.section-3-sf .btn-e-shop:hover{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    background-color: #9fc7e6;
+    border: 2px solid #cbebfb;
+    color: #fff;
+}
+.buttons-sf{
+    display: none;
+}
+
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 4 - Ventajas del sistema
+----------------------------------------------------------------------------------------*/
+.section-4-sf-title{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 51%, rgba(217,217,217,1) 100%);
+    height: 90vh;
+}
+.section-4-sf .section-4-sf-title h2{
+    font-family: 'Poppins';
+    font-size: 1.9rem;
+    color: #000;
+    display: flex;
+    position: relative;
+    top: 45%;
+    margin-left: 5%;
+}
+.sf-grid {  
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    display: grid;
+    flex-direction: wrap;
+    margin-left: 30%;
+    margin-top: 0%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Enseco             -Sistema-limpio-y-ordenado Tiempoenobra"
+    "Aislación-térmica   Aislación-acústica        Acondicionamiento-eficiente";
+}
+
+.Enseco {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%; 
+    grid-area: Enseco; 
+    background: #e0e0e0;
+    height: 200px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.Enseco:hover{
+    background: #8baac0;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s all ease-in;
+    border-radius: 25px;
+}
+.-Sistema-limpio-y-ordenado {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%; 
+    grid-area: -Sistema-limpio-y-ordenado; 
+    background: #e0e0e0;
+    height: 200px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.-Sistema-limpio-y-ordenado:hover{
+    background: #8baac0;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s all ease-in;
+    border-radius: 25px;
+}
+.Tiempoenobra {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%; 
+    grid-area: Tiempoenobra; 
+    background: #e0e0e0;
+    height: 400px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.Tiempoenobra:hover{
+    background: #8baac0;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s all ease-in;
+    border-radius: 25px;
+}
+.Aislación-térmica {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%; 
+    grid-area: Aislación-térmica; 
+    background: #e0e0e0;
+    height: 185px;
+    width: 300px;
+    margin-top: -67%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.Aislación-térmica:hover{
+    background: #8baac0;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s all ease-in;
+    border-radius: 25px;
+}
+.Aislación-acústica {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%; 
+    grid-area: Aislación-acústica; 
+    background: #e0e0e0;
+    height: 184px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50%;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.Aislación-acústica:hover{
+    background: #8baac0;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s all ease-in;
+    border-radius: 25px;
+}
+.Acondicionamiento-eficiente {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%; 
+    grid-area: Acondicionamiento-eficiente; 
+    background: #e0e0e0;
+    height: 150px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.Acondicionamiento-eficiente:hover{
+    background: #8baac0;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s all ease-in;
+    border-radius: 25px;
+}
+
+
+
 /*--------------------------------------------------------------------------------------
                                     # Footer
 ----------------------------------------------------------------------------------------*/
 .img-logo-footer{
     width: 10rem;
     height: 3rem;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 #footer {
     background: #eeeeee;
@@ -1326,7 +1649,6 @@ header{
 }
 
 
-/*/* ------------------------------------ STEEL FRAMING
 
 
 
