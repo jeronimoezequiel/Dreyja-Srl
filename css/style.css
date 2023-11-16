@@ -966,8 +966,9 @@ header{
 /* Imagen */
 .section-form .contactForm .info .imgBox {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 420px;
+    height: 420px;
+    margin-bottom: 5%;
 }
 .section-form .contactForm .info .imgBox img {
     position: absolute;
@@ -1666,7 +1667,7 @@ img {
                                     # Seccion 3 - VENTAJAS
 ----------------------------------------------------------------------------------------*/
 .section-3-cs{
-    height: 40vh;
+    height: 50vh;
     margin-top: 2%;
     padding: 10px 0px 10px 10px;
 }
@@ -2091,15 +2092,356 @@ aside{
 }
 
 
+/*--------------------------------------------------------------------------------------
+                                    SECCIÓN CONTACTO
+----------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------
+                                    # Seccion header - grid img
+----------------------------------------------------------------------------------------*/
+.section-1-contacto{
+    height: 130vh;
+    background: #fff;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.grid-rev-contacto{
+    display: grid;
+    grid-template-columns: 1.4fr 2.6fr 2.1fr 0.9fr;
+    grid-template-rows: 0.9fr 1.1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Rev-1 Rev-2 Rev-7 Rev-3 Rev-4"
+    "Rev-5 Rev-6 Rev-6 Rev-8 Rev-4";
+}
+.Rev-1 {
+    grid-area: Rev-1;
+    /* background-color: red; */
+    background-image: url(https://i.pinimg.com/564x/56/bb/16/56bb16d22e47b1a9f0f56c9f397930ff.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(65%);
+    height: 345px;
+    width: 120px;
+    display: flex;
+    position: absolute;
+    margin-left: 0%;
+    margin-top: -7.9%
+}
+.Rev-2 {
+    grid-area: Rev-2;
+    /* background-color: yellow; */
+    background-image: url(https://i.pinimg.com/564x/c2/a0/c1/c2a0c13741fd5f09bcea190ab9b79d10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(65%);
+    height: 220px;
+    width: 435px;
+    display: flex;
+    position: absolute;
+    /* margin-top: 23%; */
+    margin-left: 9.7%;
+    margin-top: -7.9%
+}
+.Rev-7 {
+    grid-area: Rev-7;
+    /* background-color: orange; */
+    background-image: url(https://i.pinimg.com/564x/f0/86/1e/f0861e7b17f4a2122e3d8d9e49ddec56.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(65%);
+    height: 220px;
+    width: 170px;
+    display: flex;
+    position: absolute;
+    /* margin-top: 23%; */
+    margin-left: 42.8%;
+    margin-top: -7.9%
+}
+.Rev-3 {
+    grid-area: Rev-3;
+    /* background-color: green; */
+    background-image: url(https://i.pinimg.com/564x/4f/c0/42/4fc0423aa73d103805b6ca39a6ad6e66.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(65%);
+    height: 300px;
+    width: 430px;
+    display: flex;
+    position: absolute;
+    margin-left: 56.2%;
+    margin-top: -7.9%
+}
+.Rev-4 {
+    grid-area: Rev-4;
+    background-color: red;
+    background-image: url(https://i.pinimg.com/564x/69/7d/59/697d59a22698ef6bf8b5337add4c2d84.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(65%);
+    height: 485px;
+    width: 152px;
+    display: flex;
+    margin-left: 0%;
+    margin-top: -70.5%
+}
+.Rev-5 {
+    grid-area: Rev-5;
+    /* background-color: blue; */
+    background-image: url(../img/IMG-20231020-WA0004.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 120px;
+    display: flex;
+    position: absolute;
+    margin-top: 18.5%;
+    margin-left: 0%;
+}
+.Rev-6 {
+    grid-area: Rev-6;
+    background-image: url(https://i.pinimg.com/564x/e6/58/c9/e658c92949622fc22837308ccfaab565.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(65%);
+    height: 260px;
+    width: 615px;
+    display: flex;
+    position: absolute;
+    margin-top: 8.9%;
+    margin-left: 9.8%;
+}
+.Rev-8 {
+    grid-area: Rev-8;
+    background-image: url(https://i.pinimg.com/564x/bf/46/ed/bf46ed854275872c36cdddc128c23822.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(65%);
+    height: 178px;
+    width: 430px;
+    display: flex;
+    margin-left: -2%;
+    margin-top: 7%;
+}
 
 
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 1 - Contacto 
+----------------------------------------------------------------------------------------*/
+.section-2-contacto{
+    height: 60vh;
+    margin-top: -1%;
+}
+.section-2-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(180deg, #fff, #d7e1ec 75%);
+}
+.contacto-title-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2%;
+}
 
+/* 
+---------- Redes sociales -------------
+*/
 
+.contenedor {
+    margin-top: 0px;
+}
+.contacto-title-center{
+    margin-bottom: 70px;
+}
+.contenedor .boton {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 20px;
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+.contenedor .boton:hover{
+    width: 200px;
+    height: 60px;
+    color: #000;
+}
+.contenedor .boton .redes-icono {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    line-height: initial;
+}
+.contenedor .boton:nth-child(1):hover .redes-icono{
+    background: #00cf4d;
+    color: #fff;
+}
+.contenedor .boton:nth-child(2):hover .redes-icono{
+    background: #00cf4d;
+    color: #fff;
+}
+.contenedor .boton:nth-child(3):hover .redes-icono{
+    background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0ce6c);
+    color: #fff;
+}
+.contenedor .boton:nth-child(4):hover .redes-icono{
+    background: #1877f2;
+    color: #fff;
+}
+.contenedor .boton:nth-child(5):hover .redes-icono{
+    background: #333;
+    color: #fff;
+}
+.contenedor .boton:nth-child(6):hover .redes-icono{
+    background: red;
+    color: #fff;
+}
+.contenedor .boton i {
+    font-size: 30px;
+    line-height: 60px;
+}
+.contenedor .boton .redes-icono span {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #000; 
+    position: absolute;
+    left: 70px; 
+    top: 0;
+    white-space: nowrap; 
+}
 
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 2 - Img como comprar 
+----------------------------------------------------------------------------------------*/
+.section-3-contacto{
+    background: linear-gradient(0deg, #fff, #d7e1ec 90%);
+    height: 620px;
+}
+.grid-contacto {  
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "ayuda g-maps";
+}
+.ayuda { 
+    border-radius: 30px;
+    grid-area: ayuda;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    background-image: url(../img/Wallpaper-tamaño-pequeño.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.g-maps { 
+    grid-area: g-maps;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    border-radius: 30px;
+    background-color: #333;
+    background-image: url(../img/Wallpaper-telefono-tamaño-pequeño.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-
-
-
+.ayuda-title{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    margin-top: 4%;
+    font-family: 'Poppins';
+    font-size: 2rem;
+}
+.ayuda-title-link{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 4%;
+    font-family: 'Poppins';
+    font-size: 2rem;
+}
+.ayuda-parrafo{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    margin-top: 8%;
+    font-family: 'Poppins';
+    font-size: .8rem;
+}
+.ayuda-parrafo-link{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    margin-left: 1%;
+    width: 30%;
+    margin-top: 8%;
+    font-family: 'Poppins';
+    font-size: .8rem;
+}
+.ayuda-link{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    margin-top: 10.5%;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    background: #d7e1ec;
+    padding: 13px;
+    border-radius: 30px;
+}
+.ayuda-link-link{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    margin-top: 11.5%;
+    margin-left: 11.5%;
+    font-family: 'Poppins';
+    font-size: .8rem;
+    background: #d7e1ec;
+    padding: 8px;
+    border-radius: 30px;
+}
 
 
 

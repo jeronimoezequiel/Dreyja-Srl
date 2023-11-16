@@ -2,15 +2,349 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/shortcut icon.jpg">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+    <!-- Box icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Aos Next on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="../clock.js" defer></script>
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+
+    <title>Navbar - Responsive</title>
 </head>
 <body>
-    <header>
-        <a href="https://api.whatsapp.com/send?phone=+5492995479547" class="btn-wsp" target="_blank">
-            <i class="bi bi-whatsapp"></i>
+    
+    <!-------------------------------------------------------------------------------------- 
+                                    # topbar
+    --------------------------------------------------------------------------------------->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info d-flex align-item-center">
+                <i class="bi bi-telephone"> Horario: Lunes a Viernes de 08:00 a 16.30hs</i>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------------------- 
+                                    # Navbar
+    --------------------------------------------------------------------------------------->
+    
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="../index.html"><img class="logo" src="../img/loo.png" alt=""></a>
+        </div>
+        
+        <div class="nav-links">
+            <ul class="tabs">
+                <li><a href="../index.html" class="underline-hover">Home</a></li>
+                <li><a href="../sections/sf.html" class="underline-hover">Steel Framing</a></li>
+                <li><a href="../sections/cs.html" class="underline-hover">Construcción en seco</a></li>
+                <li><a href="../sections/tya.html" class="underline-hover">Techo y Aislación</a></li>
+                <li><a href="../sections/pvc.html" class="underline-hover">Revestimiento de PVC</a></li>
+                <li><a href="../sections/quienes-somos.html" class="underline-hover">Quienes Somos</a></li>
+                <li><a href="../sections/contacto.html" class="underline-hover">Contacto</a></li>
+            </ul>
+            
+        </div>
+        
+        <img src="../img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    
+        <!-- Reloj digital -->
+        <div id="clock-container">
+            <div id="clock"></div>
+            <div class="status" id="status-open">Abierto</div>
+            <div class="status" id="status-closed">Cerrado</div>
+        </div>
+        <!-- Carro de Compras -->
+        <div class="carro-de-compras">
+            <a href="https://pvcenter.mercadoshops.com.ar/" target="_blank"><img class="carro" src="../img/cart_2420157.png"/></a>
+        </div>
+
+        <div class="green-line"></div>
+    </nav>
+
+    <!-------------------------------------------------------------------------------------- 
+                                    # HEADER
+    --------------------------------------------------------------------------------------->
+    <header class="header">
+        <!-- # boton de wsp -->
+        <a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
         </a>
+
+        <!-- # sección 2 - GRID Inicio -->
+        <section class="section-1-contacto">
+            <div class="grid-rev-contacto">
+                <div class="Rev-1"></div>
+                <div class="Rev-2"></div>
+                <div class="Rev-3"></div>
+                <div class="Rev-4"></div>
+                <div class="Rev-5"></div>
+                <div class="Rev-7"></div>
+                <div class="Rev-6"></div>
+                <div class="Rev-8"></div>
+            </div>
+        </section>
+        <!-- Fin de sección 2 -->
     </header>
+
+    <!-------------------------------------------------------------------------------------- 
+                                    # MAIN - SECCIONES
+    --------------------------------------------------------------------------------------->
+    <main>        
+        <!-- # sección 1 main - Beneficios del Revestimiento de PVC -->
+        <section class="section-2-contacto">
+            
+            <div class="section-title-center"></div>
+    
+            <div class="contenedor">
+                <h1 class="contacto-title-center">Soporte Dreyja</h1>
+                <div class="boton">
+                    <div class="redes-icono"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <span><a href="https://wa.me/5492995479547">Whatsapp</a></span>
+                    </div>
+                </div>
+                <div class="boton">
+                    <div class="redes-icono"><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span><a href="https://www.instagram.com/dreyjasrl/">Instagram</a></span>
+                    </div>
+                </div>
+                <div class="boton">
+                    <div class="redes-icono"><i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span><a href="https://www.facebook.com/profile.php?id=100087201953877">Facebook</a></span>
+                    </div>
+                </div>
+                <div class="boton">
+                    <div class="redes-icono"><i class="fa fa-phone" aria-hidden="true"></i>
+                        <span><a href="tel:+5492214367824">Llamar</a></span>
+                    </div>
+                </div>
+                <div class="boton">
+                    <div class="redes-icono"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span><a href="mailto:dreyjasrl@gmail.com?subject=Asunto del correo&body=Cuerpo del correo">Enviar correo</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="boton">
+                    <div class="redes-icono"><i class="fa fa-map" aria-hidden="true"></i>
+                        <span><a href="https://www.google.com/maps?q=-34.92482,-58.01217" target="_blank">Abrir en G. Maps</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de sección 1 -->
+
+        <!-- # sección 2 main - Imagen de referencia como comprar -->
+        <section class="section-3-contacto">
+
+            <div class="grid-contacto">
+                <div class="ayuda">
+                    <h2 class="ayuda-title">Estamos para ayudarte!</h2>
+                    <p class="ayuda-parrafo">Danos algunos detalles y te ofreceremos la mejor solución. Conectactate por teléfono, chat, correo electrónico y más.</p>
+                    <h4 class="ayuda-link"><a href="tel:+5492214367824">Empezar ahora</a></h4>
+                </div>
+
+                <div class="g-maps">
+                    <h2 class="ayuda-title-link">Soporte Dreyja</h2>
+                    <p class="ayuda-parrafo-link">Todos los productos para tu obra en un solo lugar. Obtén ayuda y conéctate con un experto.</p>
+                    <a href="https://wa.me/5492995479547"><h4 class="ayuda-link-link">Empezar ahora</a></h4>
+                </div>
+            </div>
+
+        </section>
+        <!-- <section class="section-3-contacto">
+            <h2>Imagen como comprar</h2>
+
+            <div id="ctn-bars-search">
+                <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+            </div>
+
+            <ul id="box-search">
+                <li><a href="#"><i class="fas fa-search"></i>HTML</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>CSS</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>JavaScript</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>PHP</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>NODEJS</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>VUEJS</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>Como hacer</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>Como crear</a></li>
+            </ul>
+
+        </section> -->
+        <!-- fin de sección 2 -->
+        
+
+<!-------------------------------------------------------------------------------------- 
+                                    # FORMULARIO
+    --------------------------------------------------------------------------------------->
+        <section class="section-form">
+            <div class="contactForm">
+                <div class="form">
+                    <div class="texto">
+                        <h2>¡Hacenos tu consulta!</h2>
+                        <p>Dejanos tu inquietud para brindarte más información!</p>
+                    </div>
+
+                    <form id="form" action="" class="form-form">
+                        <div class="inputBox">
+                            <label for="name">Nombre</label>
+                            <input name="name" id="name" type="text" placeholder="Nombre..." required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="email">email</label>
+                            <input name="email" id="email" type="text" placeholder="Email..." required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="message">Ingrese su mensaje</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Tu mensaje..."></textarea>
+                        </div>
+                        <input class="btn primary full" type="submit" value="Enviar mensaje">
+                    </form>
+                </div>
+
+                <div class="info">
+
+                    <div class="imgBox">
+                        <img src="../img/Construir futurooo.jpg" alt="">
+                    </div>
+                    
+                    <div class="textBox">
+                        <div class="infoContact">
+                            <ion-icon class="ion-icon" name="map"></ion-icon> <p>Calle 524 #4453 - cp:1900, LA PLATA, Buenos Aires. </p>
+                        </div>
+                        
+                        <div class="infoContact">
+                            <ion-icon class="ion-icon" name="call"></ion-icon> <p>+549 221 436 7824 </p>
+                        </div>
+                        <div class="infoContact">
+                            <ion-icon class="ion-icon" name="mail-open"></ion-icon> <p>dreyjasrl@gmail.com </p>
+                        </div>
+                    </div>
+                    
+                    <div class="rrss">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="mailto:dreyjasrl@gmail.com" id="dreyja-email">dreyja</a>
+
+    </main>
+
+    <!-------------------------------------------------------------------------------------- 
+                                    # FOOTER
+    --------------------------------------------------------------------------------------->
+    <footer>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                <div class="row">
+    
+                <div class="col-lg-3 col-md-6">
+                <div class="footer-info">
+                    <img class="img-logo-footer" src="../img/loo.png" alt="">
+                    <p>
+                    Calle 524 #4453 - cp:1900<br>
+                    LA PLATA, Buenos Aires. <br><br>
+                    <strong>Telefono:</strong> +549 221 436 7824<br>
+                    <strong>Email:</strong> dreyjasrl@gmail.com<br>
+                    </p>
+                    <div class="social-links mt-3">
+                    <a href="https://www.facebook.com/groups/577400563258704" class="facebook"><i class="bi bi-facebook"></i></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                    <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>   -->
+                    <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-2 col-md-6 footer-links">
+                <h4>Ayuda!</h4>
+                <ul>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="./secciones/quienes-somos.html">Acerca de Nosotros</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#servicios">Servicios</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#doctor">Politica y Privacidad</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="./secciones/contacto.html">Contacto</a></li>
+                </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Venta de Materiales para la construcción en seco</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Logistica</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Asesoramiento profesional</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Llenar campos </a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Llenar campos </a></li>
+                </ul>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                <h4>Nuestro Newsletter</h4>
+                <p>Enterate sobre nuevos ingresos y actualizaciones (todas las semanas) sobre nuestros productos</p>
+                <form action="" method="post">
+                    <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+    
+                </div>
+    
+            </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="copyright">
+            &copy; Copyright <strong><span>DREYJA SRL</span></strong><div class="br"></div> Todos los derechos reservados
+            </div>
+            <div class="credits">
+            Designed by <a href="mailto:jeronimonunez96@gmail.com">Jeronimo Nuñez</a>
+            </div>
+        </div>
+        </footer><!-- End Footer -->
+    </footer>
+
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Aos Next on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Scripts  -->
+    <script src="../clock2.js"></script>
+    <script src="../js/formulario.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/menu-hamburguesa.js"></script>
+    <script src="../js/selector-categorias.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

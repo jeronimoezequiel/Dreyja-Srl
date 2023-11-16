@@ -337,6 +337,16 @@ const productos = [
         },
         precio: 1000,
     },
+    {
+        id: "drywall",
+        nombre:"Solera 70 rigidizada BARBIERI",
+        imagen: "../img/drywall/BARBIERI-SOLERA-70-RIGIDIZADA.jpg",
+        categoria: {
+            nombre: "Drywall",
+            id: "drywall",
+        },
+        precio: 1000,
+    },
 ];
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
