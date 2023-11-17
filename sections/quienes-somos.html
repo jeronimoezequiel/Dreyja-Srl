@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/shortcut icon.jpg">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+    <!-- Box icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Aos Next on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="../clock.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Navbar - Responsive</title>
+</head>
+<body>
+    
+    <!-------------------------------------------------------------------------------------- 
+                                    # topbar
+    --------------------------------------------------------------------------------------->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info d-flex align-item-center">
+                <i class="bi bi-telephone"> Horario: Lunes a Viernes de 08:00 a 16.30hs</i>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------------------- 
+                                    # Navbar
+    --------------------------------------------------------------------------------------->
+    
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="../index.html"><img class="logo" src="../img/loo.png" alt=""></a>
+        </div>
+        
+        <div class="nav-links">
+            <ul class="tabs">
+                <li><a href="../index.html" class="underline-hover">Home</a></li>
+                <li><a href="../sections/sf.html" class="underline-hover">Steel Framing</a></li>
+                <li><a href="../sections/cs.html" class="underline-hover">Construcción en seco</a></li>
+                <li><a href="../sections/tya.html" class="underline-hover">Techo y Aislación</a></li>
+                <li><a href="../sections/pvc.html" class="underline-hover">Revestimiento de PVC</a></li>
+                <li><a href="../sections/quienes-somos.html" class="underline-hover">Quienes Somos</a></li>
+                <li><a href="../sections/contacto.html" class="underline-hover">Contacto</a></li>
+            </ul>
+            
+        </div>
+        
+        <img src="../img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    
+        <!-- Reloj digital -->
+        <div id="clock-container">
+            <div id="clock"></div>
+            <div class="status" id="status-open">Abierto</div>
+            <div class="status" id="status-closed">Cerrado</div>
+        </div>
+        <!-- Carro de Compras -->
+        <div class="carro-de-compras">
+            <a href="https://pvcenter.mercadoshops.com.ar/" target="_blank"><img class="carro" src="../img/cart_2420157.png"/></a>
+        </div>
+
+        <div class="yellow-line"></div>
+    </nav>
+
+    <!-------------------------------------------------------------------------------------- 
+                                    # HEADER
+    --------------------------------------------------------------------------------------->
+    <header class="header">
+        <!-- # boton de wsp -->
+        <a href="https://wa.me/5492995479547" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
+
+        <section id="home-quienes-somos" class="d-flex align-items-center">
+            <div class="trapezoide-quienes-somos"></div>
+            <div class="home-quienes-somos-content">
+                <!-- <h1>D R E Y J A    Srl</h1> -->
+            </div>
+        </section>
+
+    </header>
+
+    <!-------------------------------------------------------------------------------------- 
+                                    # MAIN - SECCIONES
+    --------------------------------------------------------------------------------------->
+    <main>        
+        <section class="section-1-quienes-somos">
+            <div class="quienes-somos-content">
+                <!-- <h2 class="title-ppal"> - Quienes Somos</h2> -->
+                <h3 class="introduction">
+                    Dreyja Srl. forma parte de las nuevas e innovadoras jovenes empresas dedicadas a la venta de materiales para la construcción en seco, con soluciones innovadoras y energeticamente eficientes, que contribuyen a la protección del medio ambiente. <br>
+                    <br>
+                    En Dreyja Srl, nos dedicamos a proporcionar soluciones que superan las expectativas de nuestros clientes. Nuestra reputación sólida, ventas lider y calificaciones destacadas en ventas son el resultado de años de compromiso con la excelencia y la satisfacción del cliente. <br>
+                    <br>
+                    Nos esforzamos por ofrecer una amplia gama de materiales de construcción en seco, desde placas de yeso, aislaciones, revestimientos hasta perfiles metálicos, asegurando que cada producto cumpla con los más altos estándares de calidad. En Dreyja Srl, no solo vendemos materiales; ofrecemos soluciones confiables para construcciones sólidas y de alta calidad al mejor precio.
+                </h3>
+                <div class="quienes-somos-grid">
+                    <div class="ahorro"></div>
+                    <div class="sustentabilidad"></div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <h2 class="title-2">Nuestra Visión y Misión</h2>
+                <h3 class="introduction">
+                    VISIÓN: 
+                    <br>
+                    <br>
+                    Ser la primera elección de la construcción, ofreciendo productos que no solo cumplen, sino que superan las expectativas. Liderar el mercado con soluciones constructivas, priorizando el desarrollo sustentable de la empresa y su entorno. Nos esforzamos por ser un referente en sostenibilidad y eficiencia, contribuyendo al desarrollo de construcciones más resistentes y amigables con el medio ambiente. <br>
+                    <br>
+                    <br>
+                    MISIÓN:
+                    <br>
+                    <br>
+                    Nuestra misión en Dreyja Srl es proporcionar a nuestros clientes materiales de construcción en seco de la más alta calidad, respaldados por un servicio excepcional. Nos comprometemos a ser el socio preferido de constructores, arquitectos y bricoladores, ofreciendo soluciones versátiles y sostenibles que impulsen la eficiencia en cada proyecto. A través de la innovación constante y el respeto por el medio ambiente, buscamos facilitar la construcción de estructuras sólidas y duraderas que mejoren la calidad de vida.
+                </h3>
+                <br>
+                <br>
+                <br>
+
+                <h2 class="title-2 center">Principios de conducta de la empresa</h2>
+                <h3 class="introduction">
+
+                <div class="lista-principios">
+                    <ul class="ul-izquierda">
+                        <h4><i class="bi bi-bookmark-check-fill"></i> Conducta Dreyja</h4>
+                        <li><i class="bi bi-arrow-right"></i> Compromiso Profesional</li>
+                        <li><i class="bi bi-arrow-right"></i> Comportamiento responsable y ético</li>
+                        <li><i class="bi bi-arrow-right"></i> Respeto entre pares</li>
+                        <li><i class="bi bi-arrow-right"></i> Trabajo en equipo y Cooperación</li>
+                        <li><i class="bi bi-arrow-right"></i> Mejora continua</li>
+                    </ul>
+                    <ul class="ul-derecha">
+                        <h4><i class="bi bi-check-lg"></i> Acción Dreyja</h4>
+                        <li><i class="bi bi-arrow-right"></i> Compromiso Profesional</li>
+                        <li><i class="bi bi-arrow-right"></i> Comportamiento responsable y ético</li>
+                        <li><i class="bi bi-arrow-right"></i> Respeto entre pares</li>
+                        <li><i class="bi bi-arrow-right"></i> Trabajo en equipo y Cooperación</li>
+                        <li><i class="bi bi-arrow-right"></i> Mejora continua</li>
+                    </ul>
+                </div>
+                    
+            </div>
+            
+        </section>
+
+        <section class="section-pre-footer-quienes-somos">
+            <h2 class="title-2-prefoot">Gracias por confiar en nosotros!</h2>
+            <div class="grid-rev-quienes-somos">
+                <div class="Rev-1"></div>
+                <div class="Rev-2"></div>
+                <div class="Rev-3"></div>
+                <div class="Rev-4"></div>
+                <div class="Rev-5"></div>
+                <div class="Rev-7"></div>
+                <div class="Rev-6"></div>
+                <div class="Rev-8"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-------------------------------------------------------------------------------------- 
+                                    # FOOTER
+    --------------------------------------------------------------------------------------->
+    <footer>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                <div class="row">
+    
+                <div class="col-lg-3 col-md-6">
+                <div class="footer-info">
+                    <img class="img-logo-footer" src="../img/loo.png" alt="">
+                    <p>
+                    Calle 524 #4453 - cp:1900<br>
+                    LA PLATA, Buenos Aires. <br><br>
+                    <strong>Telefono:</strong> +549 221 436 7824<br>
+                    <strong>Email:</strong> dreyjasrl@gmail.com<br>
+                    </p>
+                    <div class="social-links mt-3">
+                    <a href="https://www.facebook.com/groups/577400563258704" class="facebook"><i class="bi bi-facebook"></i></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                    <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>   -->
+                    <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-2 col-md-6 footer-links">
+                <h4>Ayuda!</h4>
+                <ul>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="./secciones/quienes-somos.html">Acerca de Nosotros</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#servicios">Servicios</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#doctor">Politica y Privacidad</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="./secciones/contacto.html">Contacto</a></li>
+                </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Venta de Materiales para la construcción en seco</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Logistica</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Asesoramiento profesional</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Llenar campos </a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Llenar campos </a></li>
+                </ul>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                <h4>Nuestro Newsletter</h4>
+                <p>Enterate sobre nuevos ingresos y actualizaciones (todas las semanas) sobre nuestros productos</p>
+                <form action="" method="post">
+                    <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+    
+                </div>
+    
+            </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="copyright">
+            &copy; Copyright <strong><span>DREYJA SRL</span></strong><div class="br"></div> Todos los derechos reservados
+            </div>
+            <div class="credits">
+            Designed by <a href="mailto:jeronimonunez96@gmail.com">Jeronimo Nuñez</a>
+            </div>
+        </div>
+        </footer><!-- End Footer -->
+    </footer>
+
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Aos Next on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Scripts  -->
+    <script src="../clock2.js"></script>
+    <script src="../js/formulario.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/menu-hamburguesa.js"></script>
+    <script src="../js/selector-categorias.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+</body>
+</html>

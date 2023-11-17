@@ -265,6 +265,7 @@ header{
     z-index: 555;
 }
 
+
 /*/* ------------------------------------ INDEX
 /*--------------------------------------------------------------------------------------
                                     # Seccion Principal Header
@@ -710,7 +711,9 @@ header{
     height: 100px;
 }
 
-/* Slider Automatico */
+/*--------------------------------------------------------------------------------------
+                                    # Seccion 5 - Slider automatico
+----------------------------------------------------------------------------------------*/
 .slider{
     width: 1300px;
     max-width: 100vw;
@@ -857,202 +860,6 @@ header{
         font-size: 1.2em;
     }
     #clock-container {
-        display: none;
-    }
-}
-
-/*--------------------------------------------------------------------------------------
-                                    # Formulario
-----------------------------------------------------------------------------------------*/
-.section-form{
-    position: relative;
-    width: 100%;
-    height: 130vh;
-    display: grid;
-    place-items: center;
-    background: #1766a3;
-    background: linear-gradient(to top right, #3E92CC, #0c426c);
-}
-#dreyja-email{
-    opacity: 0;
-}
-.section-form .contactForm{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 20px;
-    padding: 40px;
-    width: 90%;
-    height: 90%;
-    background: #9cdafa;
-    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
-}
-.section-form .contactForm .form{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 85%;
-    margin-left: 30px;
-}
-.section-form .contactForm .form form{
-    width: 100%;
-}
-/* Título y descripcion */
-.section-form .contactForm .form .texto h2{
-    font-family: 'Poppins';
-    color: #1766a3;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-.section-form .contactForm .form .texto p{
-    font-family: 'Poppins';    
-    color: #0b426c;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-/* Cajas de texto */
-.section-form .contactForm .form form .inputBox{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-/* Etiquetas e inputs */
-.section-form .contactForm .form form .inputBox label{
-    color: #1766a3;
-    font-weight: 700;
-}
-.section-form .contactForm .form form .inputBox input[type="text"],
-.section-form .contactForm .form form .inputBox input[type="email"],
-.section-form .contactForm .form form .inputBox textarea{
-    border: none;
-    background: #cbebfb;
-    padding: 10px;
-    border-radius: 10px;
-    color: #1766a3;
-    resize: none;
-}
-.section-form .contactForm .form form .inputBox input[type="text"]:focus,
-.section-form .contactForm .form form .inputBox input[type="email"]:focus,
-.section-form .contactForm .form form .inputBox textarea:focus {
-    outline: 2px solid #1766a3;
-}
-.section-form .contactForm .form form input[type="submit"] {
-    background: #1766a3;
-    display: inline-block;
-    text-align: center;
-    width: 250px;
-    padding: 10px;
-    border-radius: 15px;
-    color: #fff;
-    letter-spacing: 1px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
-    transition: 0.3s;
-}
-.section-form .contactForm .form form input[type="submit"]:hover{
-    background: #0b426c;
-}
-/* Contenedor Información */
-.section-form .contactForm .info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-/* Imagen */
-.section-form .contactForm .info .imgBox {
-    position: relative;
-    width: 420px;
-    height: 420px;
-    margin-bottom: 5%;
-}
-.section-form .contactForm .info .imgBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/* Información de Contacto */
-.section-form .contactForm .info .textBox {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-}
-.section-form .contactForm .info .textBox .infoContact {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 10px;
-}
-.section-form .contactForm .info .textBox .infoContact ion-icon{
-    font-size: 2em;
-    margin-right: 10px;
-    color: #0b426c;
-}
-.section-form .contactForm .info .textBox .infoContact p {
-    color: #0b426c;
-}
-/* Redes Sociales */
-.section-form .contactForm .info .rrss a{
-    padding: 20px;
-    font-size: 2em;
-    color: #1766a3;
-    transition: 0.3s;
-}
-.section-form .contactForm .info .rrss a:hover {
-    color: #0b426c;
-}
-/* Breakpoints */
-/* Pantallas Largas */
-@media only screen and (max-width: 1200px) {
-    .section-form .contactForm {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-}
-/* Laptops y Tablets */
-@media only screen and (max-width: 768px){
-    .section-form{
-        height: 155vh;
-        background: #1766a3;
-        background: linear-gradient(to top right, #1867a3, #0c426c);
-    }
-    .section-form .contactForm {
-        margin-left: -20px;
-    }
-    .section-form .contactForm .info{
-        height: 300px;
-        padding: 30px;
-    }
-    .section-form .contactForm .info .imgBox {
-        display: none;
-    }
-    .contact-info{
-        display: none;
-    }
-}
-/* Celular */
-@media only screen and (max-width: 600px) {
-    .section-form {
-        height: 165vh;
-    }
-    .section-form .contactForm {
-        margin-left: -20px;
-    }
-    .section-form .contactForm .form {
-        margin-left: 0px;
-        width: 100%;
-    }
-    .section-form .contactForm .info{
-        margin-bottom: 30px;
-    }
-    .carro-de-compras{
         display: none;
     }
 }
@@ -1217,7 +1024,6 @@ header{
     margin-left: 12.6%;
 }
 
-
 /*--------------------------------------------------------------------------------------
                                     # Seccion 2 - Detalle Constructivo
 ----------------------------------------------------------------------------------------*/
@@ -1321,7 +1127,6 @@ header{
     background-color: white;
     border: 2px solid #8baac0;
 }
-
 
 /*--------------------------------------------------------------------------------------
                                     # Seccion 3 - Boton de Steel Framing
@@ -1531,10 +1336,6 @@ header{
     border-radius: 25px;
 }
 
-
-
-
-
 /*/* ------------------------------------ CONSTRUCCIÓN EN SECO
 /*--------------------------------------------------------------------------------------
                                     # Seccion Principal Header
@@ -1566,11 +1367,8 @@ header{
     background: url(https://www.clarin.com/img/2017/09/21/Hy5Rgt-sZ_1256x620.jpg) top center;
 }
 
-/*------------
-# Main
---------------*/
 /*--------------------------------------------------------------------------------------
-                                    # Seccion 1
+                                    # Seccion 1 - QUE ES LA CONSTRUCCION EN SECO
 ----------------------------------------------------------------------------------------*/
 .section-1-cs{
     background-color: #fff;
@@ -1610,7 +1408,7 @@ header{
 }
 
 /*--------------------------------------------------------------------------------------
-                                    # Seccion 2
+                                    # Seccion 2 - TIPOS DE CONSTRUCCION EN SECO
 ----------------------------------------------------------------------------------------*/
 .section-2-cs {
     height: 130vh;
@@ -1982,7 +1780,11 @@ aside{
 
 
 /*--------------------------------------------------------------------------------------
-                                    # Seccion 1 - Que son los revestimientos de PVC?
+                                    REVESTIMIENTOS DE PVC
+----------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------
+                    # Seccion 1 - Que son los revestimientos de PVC?
 ----------------------------------------------------------------------------------------*/
 .cs-ventajas{
     margin-top: 5%;
@@ -2093,21 +1895,152 @@ aside{
 
 
 /*--------------------------------------------------------------------------------------
-                                    SECCIÓN CONTACTO
+                                    SECCIÓN QUIENES SOMOS
 ----------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------
-                                    # Seccion header - grid img
-----------------------------------------------------------------------------------------*/
-.section-1-contacto{
-    height: 130vh;
-    background: #fff;
+#home-quienes-somos {
+    width: 100%;
+    height: 80vh;
+    background: url("../img/isover-fondo.jpg.jfif");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -200px;
+}
+.trapezoide-quienes-somos {
+    width: 180px; /* Ancho del trapezoide */
+    height: 180px; /* Altura del trapezoide */
+    background-color: white;
+    background-image: url(../img/IMG-20231020-WA0004.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 23.5%;
+    box-shadow: -.2em 0 0.4em rgba(0, 0, 0, 0.3);
+}
+.home-quienes-somos-content h1 {
+    font-family: 'Poppins';
+    font-size: 2.2rem;
+    font-weight: 500;
+    position: absolute;
+    margin: 20% 0 0 -11rem;
+    text-align: flex-start;
+    color: #021727;
+    border-bottom: 3px solid #042641; 
+    padding-bottom: .1em;
+}
+#home-quienes-somos .home-quienes-somos-container {
+    position: relative;
+}
+.section-1-quienes-somos{
+    height: 200vh;
+    background-color: #fff;
+    margin-bottom: -5%;
+}
+.quienes-somos{
+    background-color: red;
+}
+.title-ppal {
+    color: #e90303;
+    padding: 5%;
+    margin-left: 17.5%;
+    margin-top: -12.5%;
+    font-size: 1.6rem;
+}
+.title-2{
+    color: #e90303;
+    padding: 5%;
+    margin-top: -13%;
+    margin-bottom: 2%;
+    font-size: 1.6rem;
+}
+.center{
+    display: flex;
+    margin-left: 30%;
+}
+.quienes-somos-content .introduction{
+    display: flex;
+    text-align: justify;
+    width: 100%;
+    padding: 5%;
+    margin-top: -11%;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333;
+}
+.lista-principios{
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    gap: 1rem;
     margin-bottom: 1%;
+}
+.lista-principios h4 {
+    margin-top: 1%;
+    padding: 5px;
+    color: #000;
+}
+.ul-derecha{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    background: rgb(238, 238, 238);
+    padding: 50px;
+}
+.ul-izquierda{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    background: rgb(245, 245, 245);
+    padding: 50px;
+}
+.quienes-somos-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-bottom: 5%;
+    grid-template-areas: 
+    "ahorro sustentabilidad";
+}
+.ahorro {
+    grid-area: ahorro;
+    background-color: red;
+    background-image: url(../img/ahorro-economico.jfif);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    margin-left: 65%;
+    margin-top: -8%;
+}
+.sustentabilidad {
+    grid-area: sustentabilidad;
+    background-color: blue;
+    background-image: url(../img/producto-sustentable.jfif);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    margin-top: -8%;
+}
+.section-pre-footer-quienes-somos h2{
+    color: #fff;
+    display: flex;
+    margin-top: -18%;
+    margin-bottom: 7%;
+    font-size: 1.8rem;
+    padding: 40px;
+}
+.section-pre-footer-quienes-somos{
+    height: 130vh;
+    background: #000000;
+    margin-bottom: -15%;
+    margin-top: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.grid-rev-contacto{
+.grid-rev-quienes-somos{
     display: grid;
     grid-template-columns: 1.4fr 2.6fr 2.1fr 0.9fr;
     grid-template-rows: 0.9fr 1.1fr;
@@ -2126,7 +2059,7 @@ aside{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(65%);
+    filter: opacity(80%);
     height: 345px;
     width: 120px;
     display: flex;
@@ -2141,7 +2074,7 @@ aside{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(65%);
+    filter: opacity(80%);
     height: 220px;
     width: 435px;
     display: flex;
@@ -2157,7 +2090,7 @@ aside{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(65%);
+    filter: opacity(80%);
     height: 220px;
     width: 170px;
     display: flex;
@@ -2169,11 +2102,11 @@ aside{
 .Rev-3 {
     grid-area: Rev-3;
     /* background-color: green; */
-    background-image: url(https://i.pinimg.com/564x/4f/c0/42/4fc0423aa73d103805b6ca39a6ad6e66.jpg);
+    background-image: url(../img/PATAGONICO12.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(65%);
+    filter: opacity(95%);
     height: 300px;
     width: 430px;
     display: flex;
@@ -2183,12 +2116,12 @@ aside{
 }
 .Rev-4 {
     grid-area: Rev-4;
-    background-color: red;
-    background-image: url(https://i.pinimg.com/564x/69/7d/59/697d59a22698ef6bf8b5337add4c2d84.jpg);
+    background-color: grey;
+    background-image: url(../img/placo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(65%);
+    filter: opacity(80%);
     height: 485px;
     width: 152px;
     display: flex;
@@ -2225,18 +2158,163 @@ aside{
 }
 .Rev-8 {
     grid-area: Rev-8;
-    background-image: url(https://i.pinimg.com/564x/bf/46/ed/bf46ed854275872c36cdddc128c23822.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-color: pink; */
+    background-image: url(../img/precio-steel-frame.jpg);
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    filter: opacity(65%);
+    filter: opacity(95%);
     height: 178px;
     width: 430px;
     display: flex;
     margin-left: -2%;
     margin-top: 7%;
 }
-
+/*--------------------------------------------------------------------------------------
+                                    SECCIÓN CONTACTO
+----------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------
+                                    # Seccion header - grid img
+----------------------------------------------------------------------------------------*/
+.section-1-contacto{
+    height: 130vh;
+    background: #fff;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.grid-rev-contacto{
+    display: grid;
+    grid-template-columns: 1.4fr 2.6fr 2.1fr 0.9fr;
+    grid-template-rows: 0.9fr 1.1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Rev-1 Rev-2 Rev-7 Rev-3 Rev-4"
+    "Rev-5 Rev-6 Rev-6 Rev-8 Rev-4";
+}
+.Rev-1 {
+    grid-area: Rev-1;
+    /* background-color: red; */
+    background-image: url(https://i.pinimg.com/564x/56/bb/16/56bb16d22e47b1a9f0f56c9f397930ff.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(80%);
+    height: 345px;
+    width: 120px;
+    display: flex;
+    position: absolute;
+    margin-left: 0%;
+    margin-top: -7.9%
+}
+.Rev-2 {
+    grid-area: Rev-2;
+    /* background-color: yellow; */
+    background-image: url(https://i.pinimg.com/564x/c2/a0/c1/c2a0c13741fd5f09bcea190ab9b79d10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(80%);
+    height: 220px;
+    width: 435px;
+    display: flex;
+    position: absolute;
+    /* margin-top: 23%; */
+    margin-left: 9.7%;
+    margin-top: -7.9%
+}
+.Rev-7 {
+    grid-area: Rev-7;
+    /* background-color: orange; */
+    background-image: url(https://i.pinimg.com/564x/f0/86/1e/f0861e7b17f4a2122e3d8d9e49ddec56.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(80%);
+    height: 220px;
+    width: 170px;
+    display: flex;
+    position: absolute;
+    /* margin-top: 23%; */
+    margin-left: 42.8%;
+    margin-top: -7.9%
+}
+.Rev-3 {
+    grid-area: Rev-3;
+    /* background-color: green; */
+    background-image: url(../img/PATAGONICO12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(95%);
+    height: 300px;
+    width: 430px;
+    display: flex;
+    position: absolute;
+    margin-left: 56.2%;
+    margin-top: -7.9%
+}
+.Rev-4 {
+    grid-area: Rev-4;
+    background-color: grey;
+    background-image: url(../img/placo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(80%);
+    height: 485px;
+    width: 152px;
+    display: flex;
+    margin-left: 0%;
+    margin-top: -70.5%
+}
+.Rev-5 {
+    grid-area: Rev-5;
+    /* background-color: blue; */
+    background-image: url(../img/IMG-20231020-WA0004.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 120px;
+    display: flex;
+    position: absolute;
+    margin-top: 18.5%;
+    margin-left: 0%;
+}
+.Rev-6 {
+    grid-area: Rev-6;
+    background-image: url(https://i.pinimg.com/564x/e6/58/c9/e658c92949622fc22837308ccfaab565.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(65%);
+    height: 260px;
+    width: 615px;
+    display: flex;
+    position: absolute;
+    margin-top: 8.9%;
+    margin-left: 9.8%;
+}
+.Rev-8 {
+    grid-area: Rev-8;
+    /* background-color: pink; */
+    background-image: url(../img/precio-steel-frame.jpg);
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    filter: opacity(95%);
+    height: 178px;
+    width: 430px;
+    display: flex;
+    margin-left: -2%;
+    margin-top: 7%;
+}
 
 /*--------------------------------------------------------------------------------------
                                     # Seccion 1 - Contacto 
@@ -2260,11 +2338,9 @@ aside{
     font-size: 3rem;
     margin-top: 2%;
 }
-
 /* 
 ---------- Redes sociales -------------
 */
-
 .contenedor {
     margin-top: 0px;
 }
@@ -2383,7 +2459,6 @@ aside{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .ayuda-title{
     display: flex;
     position: absolute;
@@ -2447,7 +2522,201 @@ aside{
 
 
 
-
+/*--------------------------------------------------------------------------------------
+                                    # Formulario
+----------------------------------------------------------------------------------------*/
+.section-form{
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    display: grid;
+    place-items: center;
+    background: #1766a3;
+    background: linear-gradient(to top right, #3E92CC, #0c426c);
+}
+#dreyja-email{
+    opacity: 0;
+}
+.section-form .contactForm{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    width: 90%;
+    height: 90%;
+    background: #9cdafa;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+.section-form .contactForm .form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 30px;
+}
+.section-form .contactForm .form form{
+    width: 100%;
+}
+/* Título y descripcion */
+.section-form .contactForm .form .texto h2{
+    font-family: 'Poppins';
+    color: #1766a3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.section-form .contactForm .form .texto p{
+    font-family: 'Poppins';    
+    color: #0b426c;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+/* Cajas de texto */
+.section-form .contactForm .form form .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+/* Etiquetas e inputs */
+.section-form .contactForm .form form .inputBox label{
+    color: #1766a3;
+    font-weight: 700;
+}
+.section-form .contactForm .form form .inputBox input[type="text"],
+.section-form .contactForm .form form .inputBox input[type="email"],
+.section-form .contactForm .form form .inputBox textarea{
+    border: none;
+    background: #cbebfb;
+    padding: 10px;
+    border-radius: 10px;
+    color: #1766a3;
+    resize: none;
+}
+.section-form .contactForm .form form .inputBox input[type="text"]:focus,
+.section-form .contactForm .form form .inputBox input[type="email"]:focus,
+.section-form .contactForm .form form .inputBox textarea:focus {
+    outline: 2px solid #1766a3;
+}
+.section-form .contactForm .form form input[type="submit"] {
+    background: #1766a3;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+    transition: 0.3s;
+}
+.section-form .contactForm .form form input[type="submit"]:hover{
+    background: #0b426c;
+}
+/* Contenedor Información */
+.section-form .contactForm .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Imagen */
+.section-form .contactForm .info .imgBox {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    margin-bottom: 5%;
+}
+.section-form .contactForm .info .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Información de Contacto */
+.section-form .contactForm .info .textBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.section-form .contactForm .info .textBox .infoContact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.section-form .contactForm .info .textBox .infoContact ion-icon{
+    font-size: 2em;
+    margin-right: 10px;
+    color: #0b426c;
+}
+.section-form .contactForm .info .textBox .infoContact p {
+    color: #0b426c;
+}
+/* Redes Sociales */
+.section-form .contactForm .info .rrss a{
+    padding: 20px;
+    font-size: 2em;
+    color: #1766a3;
+    transition: 0.3s;
+}
+.section-form .contactForm .info .rrss a:hover {
+    color: #0b426c;
+}
+/* Breakpoints */
+/* Pantallas Largas */
+@media only screen and (max-width: 1200px) {
+    .section-form .contactForm {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+/* Laptops y Tablets */
+@media only screen and (max-width: 768px){
+    .section-form{
+        height: 155vh;
+        background: #1766a3;
+        background: linear-gradient(to top right, #1867a3, #0c426c);
+    }
+    .section-form .contactForm {
+        margin-left: -20px;
+    }
+    .section-form .contactForm .info{
+        height: 300px;
+        padding: 30px;
+    }
+    .section-form .contactForm .info .imgBox {
+        display: none;
+    }
+    .contact-info{
+        display: none;
+    }
+}
+/* Celular */
+@media only screen and (max-width: 600px) {
+    .section-form {
+        height: 165vh;
+    }
+    .section-form .contactForm {
+        margin-left: -20px;
+    }
+    .section-form .contactForm .form {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .section-form .contactForm .info{
+        margin-bottom: 30px;
+    }
+    .carro-de-compras{
+        display: none;
+    }
+}
 
 /*--------------------------------------------------------------------------------------
                                     # Footer
